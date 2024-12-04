@@ -1,0 +1,25 @@
+[project]
+name = "referral"
+version = "0.1.0"
+description = "Simple test project"
+readme = "README.md"
+requires-python = "~=3.10"
+dependencies = [
+    "django-environ>=0.11.2",
+    "django-phonenumber-field[phonenumberslite]>=8.0.0",
+    "django-sqids>=0.2.1",
+    "django-stubs-ext>=5.1.1",
+    "djangorestframework>=3.15.2",
+    "drf-spectacular>=0.28.0",
+    "gunicorn>=23.0.0",
+    "psycopg[binary]>=3.2.3",
+    "sqids>=0.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "coverage>=7.6.8",
+    "django-types>=0.19.1",
+    "djangorestframework-types>=0.9.0",
+    "ipython>=8.30.0",
+]
